@@ -1,0 +1,63 @@
+            #### 
+####            This file contains all my alias 
+####    This is probably not very usefull to anyone else, 
+####        but fell free to use all you want
+####                   André Teixeira
+####
+
+## Alias to launch spotify with rust addblock
+alias spotify='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
+
+# Alias to use python 2 instead of python3 
+alias python2='python2.7'
+
+ 
+# Alias to move to specific folder 
+alias dot='cd ~/Documents/dotfiles/'  # goes to dot files git folder 
+alias FST='cd ~/Documents/FST/'  # goes to FST folder  
+alias FCP='cd ~/Documents/FCP/' # moves to FCP folder 
+alias software12='cd ~/Documents/FST/software12/' # goes to software12 folder 
+alias caninterface='cd ~/Documents/FST/software12/fst-can-interface/ && sudo ./CANinterface' # launch CANinterface with sudo 
+alias driverinterface='software12 && cd driver-interface && ./driver-interface' # launch driver interface
+alias json="FST && cd fstjson" # goes to git containing fstjson
+alias install='cd ~/Install/' # goes to my folder to clone random git to install stuff
+alias humbleRun='docker run --volume="/home/andret/Documents/FST":"/home/andret/Documents/FST" --net=host -v /tmp/.X11-unix/tmp/.X11-unix -e DISPLAY=$DISPLAY -it roshumble:latest'
+alias humbleBuild='cd ~/Documents/FST/controlDocker/ && docker build -t roshumble:latest .'
+
+
+#alias used for FST work 
+alias vsniffer='software12 && cd tooling/fake_lib/vsniffer && python3 vsniffer.py config.toml && echo 127.0.0.1:5001 | xclip -sel clip'
+
+# alias to launch lunar vim
+alias v='lvim'
+alias vim='lvim'
+
+## Alias for wifi control ##
+
+alias scanwifi='nmcli dev wifi rescan && nmcli dev wifi list'
+alias telemetry24='nmcli dev wifi connect FST_Telemetry_2.4GHz'
+alias telemetry5='nmcli dev wifi connect FST_Telemetry_5GHz'
+alias eduroam='nmcli dev wifi connect eduroam'
+alias tplink='nmcli dev wifi connect TP-Link_B2AA'
+alias redmi='nmcli dev wifi connect Redmi'
+
+## Alias for fastert terminal integrat ion with files 
+alias open='evince'
+alias pdf='soffice --headless --convert-to pdf'
+
+# Alias for unsuspend a task after using CTRL+Z in an app
+alias unsuspend='fg'
+
+# Alias to suspenð the computer 
+alias suspend='systemctl suspend'
+
+#open current directory in thunar
+alias directory='thunar . &'
+
+# Alias needed for my tele lab project 
+alias recI='xxd -b -c1 recI.dat | cut -d" " -f2 | tr -d "\n" | tr -d "\0" > recI.txt'
+alias recR='xxd -b -c1 recR.dat | cut -d" " -f2 | tr -d "\n" | tr -d "\0" > recR.txt'
+alias sent='xxd -b -c1 sent.dat | cut -d" " -f2 | tr -d "\n" | tr -d "\0" > sent.txt'
+alias runFile='cd /home/andret/Downloads/fuckThisShitImOUT/ && ./a.out'
+alias processFile='cd /home/andret/Downloads/fuckThisShitImOUT/ && recI && recR && sent && runFile' 
+

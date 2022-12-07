@@ -1,0 +1,56 @@
+{
+  "clientId": "99f96d89-917d-4bc7-9e45-7c49ac68f07b",
+  "userId": "1154400716151867384",
+  "authedUserIDs": [
+    "1154400716151867384"
+  ],
+  "app": {
+    "logLevel": 1,
+    "enableColorSpaceSrgb": false,
+    "visibleNewProjectBtn": true,
+    "useZenity": false,
+    "disableThemes": false,
+    "panelHeight": 40,
+    "saveLastOpenedTabs": true,
+    "exportDir": "/home/andret/Pictures/Figma",
+    "fontDirs": [
+      "/usr/share/fonts",
+      "/usr/local/share/fonts",
+      "/run/host/fonts",
+      "/run/host/user-fonts",
+      "/home/andret/.local/share/fonts"
+    ],
+    "lastOpenedTabs": [
+      {
+        "title": "Driver Interface",
+        "url": "https://www.figma.com/file/PKpJY0fwgPDor0UHgIYrX6/Driver-Interface"
+      },
+      {
+        "title": "Driver Interface",
+        "url": "https://www.figma.com/file/PKpJY0fwgPDor0UHgIYrX6/Driver-Interface"
+      }
+    ],
+    "featureFlags": {
+      "comments_on_the_canvas": true,
+      "desktop_always_preload": true,
+      "desktop_disable_accelerators": true,
+      "desktop_disable_cs_prompt": true,
+      "desktop_menu_unification_rollout": true,
+      "desktop_bell_feed_rollout": true,
+      "desktop_push_notifs_mac": true,
+      "desktop_push_notifs_win": true,
+      "desktop_new_tab_v2_rollout": true,
+      "figjam_miro_import": true,
+      "paste_to_replace": true,
+      "vector_menu_after_arrange": true,
+      "voice_captions_enabled": true,
+      "use_freetype": true
+    },
+    "savedExtensions": []
+  },
+  "theme": {},
+  "ui": {
+    "scalePanel": 1,
+    "scaleFigmaUI": 1
+  }
+}

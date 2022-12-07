@@ -1,0 +1,13 @@
+[Added Associations]
+image/png=brave-browser-nightly.desktop;
+image/jpeg=feh.desktop;
+application/pdf=brave-browser-nightly.desktop;firefox.desktop;
+image/gif=brave-browser-nightly.desktop;
+application/x-ms-dos-executable=wine.desktop;
+video/mp4=org.gnome.Totem.desktop;mpv.desktop;
+text/plain=emacs.desktop;
+application/vnd.rar=org.gnome.FileRoller.desktop;
+
+[Default Applications]
+x-scheme-handler/figma=figma-linux.desktop
+x-scheme-handler/notion=notion-app.desktop
