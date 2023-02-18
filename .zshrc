@@ -10,20 +10,13 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
- 
-# export PATH="ª/opt/ros/humble/include:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="/opt/microchip/xc16/v2.00/bin:$PATH"
-export PYTHONPATH="$PYTHONPATH:/home/andret/lib/python3.10/site-packages"
-export PATH="/usr/local/MATLAB/R2022b/extern/include:$PATH"
-export EDITOR='lvim' # define predefine editor
-
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+
+ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -119,52 +112,9 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-# source .aliases file
-source $HOME/.config/zsh/.aliases
+# Add xc8 xc16 xc32 to path
+export PATH="/opt/microchip/xc8/v2.35/bin:$PATH"
+export PATH="/opt/microchip/xc16/v1.60/bin:$PATH"
+export PATH="/opt/microchip/xc32/v4.20/bin:$PATH"
 
-# Ros2 shit
-
-export COLCON_INCLUDE_PATH=/opt/ros/humble/include
-export ROS_DOMAIN_ID=4
-source $HOME/Install/ros2-humble/src/install/setup.zsh
-
-
-
-# alias spotify='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
-# alias python2='python2.7'
-# alias dot='cd ~/Documents/dotfiles/'
-# alias FST='cd ~/Documents/FST/'
-# alias FCP='cd ~/Documents/FCP/'
-# alias software12='cd ~/Documents/FST/software12/'
-# alias CANinterface='cd ~/Documents/FST/software12/fst-can-interface/ && sudo ./CANinterface'
-# alias v='lvim'
-# alias install='cd ~/Install/'
-
-# ## Alias for wifi control ##
-
-# alias scanwifi='nmcli dev wifi rescan && nmcli dev wifi list'
-# alias telemetry24='nmcli dev wifi connect FST_Telemetry_2.4GHz'
-# alias telemetry5='nmcli dev wifi connect FST_Telemetry_5GHz'
-# alias eduroam='nmcli dev wifi connect eduroam'
-# alias tplink='nmcli dev wifi connect TP-Link_B2AA'
-#  
-# alias open='evince'
-# ## Open file from terminal ##
-# Fix this to be a function that has auto complete :)
-# _open()
-# {
-#    if [[ $#  > 0 ]] then
-#         for i in "$@"
-#         do
-#             if [[ -a i ]] then 
-#                 evince i
-#             else
-#                 echo "file $i does not exist"
-#             fi
-#           # echo "hello"
-#         done  
-#     else 
-#         echo "You need to pass an argument to use this alias, since it cannot open a file that is no created"
-#     fi
-# }
-
+export PATH="$HOME/.local/bin:$PATH"
